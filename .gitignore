@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+.chainwright-test-*/
+.chainwright/
+.env
+.env.*
+!.env.example
+.verification-deps/
+*.log

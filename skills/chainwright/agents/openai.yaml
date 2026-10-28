@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chainwright"
+  short_description: "Help creators reduce mistakes with proportionate checks"
+  default_prompt: "Use $chainwright to check this work, choose the lightest useful verification, and report any remaining uncertainty."

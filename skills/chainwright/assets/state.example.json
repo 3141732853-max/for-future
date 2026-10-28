@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "profiles": ["code"],
+  "goal": "Add empty-input handling while preserving nonempty results",
+  "scope": ["src/summary.py", "tests/test_summary.py"],
+  "premises": [
+    {"id": "P1", "claim": "The user requests an empty list to return zero", "basis": "given", "verification": "verified", "evidence": ["User acceptance criterion R1; replace with the actual request reference"]},
+    {"id": "P2", "claim": "Nonempty inputs must preserve current results", "basis": "given", "verification": "verified", "evidence": ["User acceptance criterion R2; replace with the actual request reference"]}
+  ],
+  "steps": [
+    {"id": "S1", "premises": ["P1", "P2"], "depends_on": [], "expected": "Minimal fix and acceptance/regression cases", "check": "Empty list returns zero; representative nonempty cases match the baseline", "status": "pending", "output": "", "evidence": []},
+    {"id": "S2", "premises": ["P1", "P2"], "depends_on": ["S1"], "expected": "Evidence-backed review", "check": "All four dimensions reviewed and scope diff inspected", "status": "pending", "output": "", "evidence": []}
+  ],
+  "code_changed": true,
+  "review": {
+    "control_flow": {"status": "pending", "evidence": []},
+    "data_dependencies": {"status": "pending", "evidence": []},
+    "boundaries": {"status": "pending", "evidence": []},
+    "intent_alignment": {"status": "pending", "evidence": []}
+  },
+  "recoveries": [],
+  "conclusion": {"status": "in_progress", "summary": "Illustrative starting ledger; no implementation or tests have run", "conditions": []}
+}
